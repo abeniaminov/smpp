@@ -210,6 +210,7 @@ func newSubmitSM(hdr *Header) *codec {
 			pdufield.DestAddrNPI,
 			pdufield.DestinationAddr,
 			pdufield.ESMClass,
+			pdufield.MessageState,
 			pdufield.ProtocolID,
 			pdufield.PriorityFlag,
 			pdufield.ScheduleDeliveryTime,
@@ -274,6 +275,7 @@ func newSubmitMulti(hdr *Header) *codec {
 			pdufield.NumberDests,
 			pdufield.DestinationList, // contains DestFlag, DestAddrTON and DestAddrNPI for each address
 			pdufield.ESMClass,
+			pdufield.MessageState,
 			pdufield.ProtocolID,
 			pdufield.PriorityFlag,
 			pdufield.ScheduleDeliveryTime,
@@ -341,6 +343,7 @@ func newDeliverSM(hdr *Header) *codec {
 			pdufield.DestAddrNPI,
 			pdufield.DestinationAddr,
 			pdufield.ESMClass,
+			pdufield.MessageState,
 			pdufield.ProtocolID,
 			pdufield.PriorityFlag,
 			pdufield.ScheduleDeliveryTime,
