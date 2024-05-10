@@ -1,4 +1,4 @@
-module github.com/mdouchement/smpp
+module github.com/abeniaminov/smpp
 
 go 1.18
 
