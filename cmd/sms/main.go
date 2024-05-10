@@ -19,7 +19,7 @@ import (
 
 	"github.com/urfave/cli"
 
-	"github.com/mdouchement/smpp/smpp"
+	"github.com/abeniaminov/smpp/smpp"
 	"github.com/abeniaminov/smpp/smpp/pdu/pdufield"
 	"github.com/abeniaminov/smpp/smpp/pdu/pdutext"
 )
