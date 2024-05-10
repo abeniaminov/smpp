@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/mdouchement/smpp/smpp/pdu/pdufield"
+	"github.com/abeniaminov/smpp/smpp/pdu/pdufield"
 	"github.com/stretchr/testify/assert"
 )
 

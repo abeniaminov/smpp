@@ -13,8 +13,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/mdouchement/smpp/smpp/pdu"
-	"github.com/mdouchement/smpp/smpp/pdu/pdufield"
+	"github.com/abeniaminov/smpp/smpp/pdu"
+	"github.com/abeniaminov/smpp/smpp/pdu/pdufield"
 )
 
 // Default settings.

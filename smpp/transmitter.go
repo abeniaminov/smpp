@@ -15,10 +15,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mdouchement/smpp/smpp/pdu"
-	"github.com/mdouchement/smpp/smpp/pdu/pdufield"
-	"github.com/mdouchement/smpp/smpp/pdu/pdutext"
-	"github.com/mdouchement/smpp/smpp/pdu/pdutlv"
+	"github.com/abeniaminov/smpp/smpp/pdu"
+	"github.com/abeniaminov/smpp/smpp/pdu/pdufield"
+	"github.com/abeniaminov/smpp/smpp/pdu/pdutext"
+	"github.com/abeniaminov/smpp/smpp/pdu/pdutlv"
 )
 
 // ErrMaxWindowSize is returned when an operation (such as Submit) violates

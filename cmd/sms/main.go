@@ -20,8 +20,8 @@ import (
 	"github.com/urfave/cli"
 
 	"github.com/mdouchement/smpp/smpp"
-	"github.com/mdouchement/smpp/smpp/pdu/pdufield"
-	"github.com/mdouchement/smpp/smpp/pdu/pdutext"
+	"github.com/abeniaminov/smpp/smpp/pdu/pdufield"
+	"github.com/abeniaminov/smpp/smpp/pdu/pdutext"
 )
 
 // Version of smppcli.
