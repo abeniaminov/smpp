@@ -176,6 +176,7 @@ var cmdShortMessage = cli.Command{
 			DestAddrNPI:          uint8(c.Int("dest-addr-npi")),
 			ESMClass:             uint8(c.Int("esm-class")),
 			ProtocolID:           uint8(c.Int("protocol-id")),
+			MessageState:		  uint8(c.Int("message-state")),	
 			PriorityFlag:         uint8(c.Int("priority-flag")),
 			ScheduleDeliveryTime: c.String("schedule-delivery-time"),
 			ReplaceIfPresentFlag: uint8(c.Int("replace-if-present-flag")),

@@ -190,6 +190,7 @@ type ShortMessage struct {
 	DestAddrNPI          uint8
 	ESMClass             uint8
 	ProtocolID           uint8
+	MessageState		 uint8
 	PriorityFlag         uint8
 	ScheduleDeliveryTime string
 	ReplaceIfPresentFlag uint8
@@ -377,6 +378,7 @@ func (t *Transmitter) SubmitLongMsg(sm *ShortMessage) ([]ShortMessage, error) {
 		f.Set(pdufield.DestAddrNPI, sm.DestAddrNPI)
 		f.Set(pdufield.ESMClass, 0x40)
 		f.Set(pdufield.ProtocolID, sm.ProtocolID)
+		f.Set(pdufield.MessageState, sm.MessageState)
 		f.Set(pdufield.PriorityFlag, sm.PriorityFlag)
 		f.Set(pdufield.ScheduleDeliveryTime, sm.ScheduleDeliveryTime)
 		f.Set(pdufield.ReplaceIfPresentFlag, sm.ReplaceIfPresentFlag)
@@ -423,6 +425,7 @@ func (t *Transmitter) submitMsg(sm *ShortMessage, p pdu.Body, dataCoding uint8) 
 	f.Set(pdufield.DestAddrNPI, sm.DestAddrNPI)
 	f.Set(pdufield.ESMClass, sm.ESMClass)
 	f.Set(pdufield.ProtocolID, sm.ProtocolID)
+	f.Set(pdufield.MessageState, sm.MessageState)
 	f.Set(pdufield.PriorityFlag, sm.PriorityFlag)
 	f.Set(pdufield.ScheduleDeliveryTime, sm.ScheduleDeliveryTime)
 	f.Set(pdufield.ReplaceIfPresentFlag, sm.ReplaceIfPresentFlag)
@@ -490,6 +493,7 @@ func (t *Transmitter) submitMsgMulti(sm *ShortMessage, p pdu.Body, dataCoding ui
 	f.Set(pdufield.SourceAddrNPI, sm.SourceAddrNPI)
 	f.Set(pdufield.ESMClass, sm.ESMClass)
 	f.Set(pdufield.ProtocolID, sm.ProtocolID)
+	f.Set(pdufield.MessageState, sm.MessageState)
 	f.Set(pdufield.PriorityFlag, sm.PriorityFlag)
 	f.Set(pdufield.ScheduleDeliveryTime, sm.ScheduleDeliveryTime)
 	f.Set(pdufield.ReplaceIfPresentFlag, sm.ReplaceIfPresentFlag)
