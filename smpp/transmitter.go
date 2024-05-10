@@ -190,7 +190,7 @@ type ShortMessage struct {
 	DestAddrNPI          uint8
 	ESMClass             uint8
 	ProtocolID           uint8
-	MessageState		 uint8
+	MessageState	     uint8
 	PriorityFlag         uint8
 	ScheduleDeliveryTime string
 	ReplaceIfPresentFlag uint8
